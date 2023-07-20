@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//      //protottpe
+//      function person(name,age){
+//         this.name = name;
+//         this.age = age;
+//      }
+//      person.prototype.get = function(){
+//         console.log(`name ${this.name} age ${this.age} ${this}`)
+//      }
+//      const p1 = new person('ramu',20)
+//      const p2 = new person('kk',32)
+//      console.log(p1.get())
+//      console.log(p2.get())
+
+
+// ////////////////////////////////////////////
+// // --proto--
+// let parent = {
+//     name(){
+//         console.log("hello")
+//     }
+// }
+
+// const child = {}
+// child.__proto__ = parent;
+// child.name();
+
+
+// callbacks
+// function callback(){
+//     console.log("hrlll")
+// }
+
+// function get(p,call){
+//     console.log(p)
+//     call()
+// }
+// get(5,callback)
+
+
+function d(){
+    setTimeout(() =>{
+        console.log("1")
+        setTimeout(() =>{
+        console.log("2")
+        },2000)
+    },1000)
+}
+d()
+
+
+    </script>
+</body>
+</html>
